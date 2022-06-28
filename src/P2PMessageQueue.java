@@ -13,10 +13,6 @@ public class P2PMessageQueue {
      */
     public synchronized void enqueue(P2PMessage oMessage){
 
-//		#####################
-//		### ADD CODE HERE ###
-//		#####################
-
         P2PMessage temp = oMessage;
         if(!hasNodes()) {
             head = temp;
@@ -35,9 +31,6 @@ public class P2PMessageQueue {
      */
     public synchronized P2PMessage dequeue(){
 
-//		#####################
-//		### ADD CODE HERE ###
-//		#####################
 
         if(hasNodes()) {
             P2PMessage temp = head;
@@ -49,10 +42,6 @@ public class P2PMessageQueue {
 
 
     public boolean hasNodes(){
-
-//		#####################
-//		### ADD CODE HERE ###
-//		#####################
 
         return head != null;
     }
