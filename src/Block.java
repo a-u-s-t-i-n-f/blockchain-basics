@@ -23,10 +23,6 @@ public class Block {
      */
     public synchronized String computeMerkleRoot(ArrayList<String> lstItems) {
 
-//		#####################
-//		### ADD CODE HERE ###
-//		#####################
-
         MerkleNode oNode1 = new MerkleNode();
         MerkleNode oNode2 = new MerkleNode();
         MerkleNode oNode3 = new MerkleNode();
@@ -69,11 +65,6 @@ public class Block {
      * @param oRightNode
      */
     private void populateMerkleNode(MerkleNode oNode, MerkleNode oLeftNode, MerkleNode oRightNode){
-
-
-//		#####################
-//		### ADD CODE HERE ###
-//		#####################
 
         oNode.oLeft = oLeftNode;
         oNode.oRight = oRightNode;
