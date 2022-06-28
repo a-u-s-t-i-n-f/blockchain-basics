@@ -23,10 +23,6 @@ public class Miner implements Runnable{
      */
     public boolean doProofOfWork(Block oBlock) {
 
-//		#####################
-//		### ADD CODE HERE ###
-//		#####################
-
         String sEmpty = "";
         while(sEmpty.length() < oBlock.getDifficulty()) {
             sEmpty = sEmpty + 0;
