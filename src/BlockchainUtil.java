@@ -14,10 +14,6 @@ public class BlockchainUtil {
      */
     public static synchronized String generateHash(String sOriginal){
 
-//		#####################
-//		### ADD CODE HERE ###
-//		#####################
-
         try {
             MessageDigest digest = MessageDigest.getInstance("SHA-256");
             byte[] btEncodedhash = digest.digest(sOriginal.getBytes(StandardCharsets.UTF_8));
