@@ -18,11 +18,6 @@ public class P2PUtil {
      */
     public static String connectForOneMessage(String sIP, int iPort, String sMessage){
 
-//		#####################
-//		### ADD CODE HERE ###
-//		#####################
-
-
         try(Socket oSocket = new Socket()) {
 
             oSocket.connect(new InetSocketAddress(sIP, iPort), 5000);
